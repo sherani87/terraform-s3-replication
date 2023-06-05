@@ -1,0 +1,21 @@
+output "s3_bucket_id" {
+  description = "The name of the bucket."
+  value       = module.source_s3_bucket.bucket
+}
+
+output "s3_bucket_region" {
+  description = "The AWS region this bucket resides in."
+  value       = module.source_s3_bucket.region
+}
+
+output "replica_bucket" {
+  description = "The name of the bucket."
+  value       = module.replica_s3_bucket.bucket
+}
+
+output "replica_bucket_region" {
+  description = "The AWS region this bucket resides in."
+  value       = module.replica_s3_bucket.region
+}
+
+
